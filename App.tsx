@@ -1,5 +1,11 @@
+
+import { AuthProvider } from './src/contexts/authContext';
 import Layout from './Layout';
 
 export default function App() {
-  return <Layout/>
+  return (
+    <AuthProvider>
+      <Layout></Layout>
+    </AuthProvider>
+  );
 }
